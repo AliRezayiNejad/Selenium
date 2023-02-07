@@ -11,7 +11,7 @@ for line in myzip.open('top-1m.csv').readlines():
 from io import TextIOWrapper
 from zipfile import ZipFile
 
-with ZipFile(r'D:\The Escape Iran Project\Round 2\Jason\tranco_6JZJX-1m.csv.zip') as zf:
+with ZipFile(r'D:\OEI\R2\Jason Polakis\tranco_6JZJX-1m.csv.zip') as zf:
     with zf.open('top-1m.csv', 'r') as infile:
         reader = csv.reader(TextIOWrapper(infile, 'utf-8'))
         for row in reader:
@@ -44,7 +44,7 @@ sameSiteNoneCount = 0
 
 exclude_keys = ['name', 'value', 'expiry']
 
-with ZipFile(r'D:\The Escape Iran Project\Round 2\Jason\tranco_6JZJX-1m.csv.zip') as zf:
+with ZipFile(r'D:\OEI\R2\Jason Polakis\tranco_6JZJX-1m.csv.zip') as zf:
     with zf.open('top-1m.csv', 'r') as infile:
         reader = csv.reader(TextIOWrapper(infile, 'utf-8'))
         for row in reader:
